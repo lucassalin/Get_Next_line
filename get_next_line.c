@@ -25,7 +25,7 @@ char	*ft_next(char *buffer)
 {
 	int		i;
 	int		j;
-	char	*line;
+	char		*line;
 
 	i = 0;
 	while (buffer[i] && buffer[i] != '\n')
@@ -48,7 +48,7 @@ char	*ft_next(char *buffer)
 char	*ft_line(char *buffer)
 {
 	char	*line;
-	int		i;
+	int	i;
 
 	i = 0;
 	if (!buffer[i])
@@ -71,7 +71,7 @@ char	*ft_line(char *buffer)
 char	*read_file(int fd, char *res)
 {
 	char	*buffer;
-	int		byte_read;
+	int	byte_read;
 
 	if (!res)
 		res = ft_calloc(1, 1);
